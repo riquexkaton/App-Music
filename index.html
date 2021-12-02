@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/lighter-mode.css" class="change-color">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <header>
+        <div class="dark-mode">
+            <p>Dark Mode</p>
+            <div class="checkbox">
+                <div class="switch"><i class="fa fa-moon"></i></div>
+            </div>
+        </div>
+    </header>
+    <!--contenedor-->
+    <div class="container">
+        <!--la cancion que se reproduce actualmente-->
+        <div class="current-song">
+            <div class="imgbx">
+                <img src="" alt="">
+                <div class="buttons">
+                    <div class="before button"><i class="fa fa-angle-double-left"></i></div>
+                    <div class="playAndPause button"><i class="fa fa-play"></i></div>
+                    <div class="after button"><i class="fa fa-angle-double-right"></i></div>
+                </div>
+            </div>
+            <div class="bar-progress">
+                <div class="current-value">
+                    <span>100</span>
+                </div>
+                <div class="input">
+                    <input type="range" min="0" max="" value="0">
+                    <p class="left value">0</p>
+                    <p class="right value">0:00</p>
+                </div>
+            </div>
+            <p class="name-song">blinding lights</p>
+            <p class="artist-name">The wekeend</p>
+        </div>
+        <!--lista de canciones-->
+        <div class="list-song">
+            <h2>Playlist</h2>
+            <ul>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./music.js"></script>
+
+</html>
